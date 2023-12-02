@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de Divisas</title>
+  <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+  <div class="converter">
+    <h1>Conversor de Divisas</h1>
+    <div class="input-group">
+      <label for="fromCurrency">De:</label>
+      <select id="fromCurrency">
+        <option value="USD">🇺🇸 Dólar estadounidense (USD)</option>
+        <option value="CLP">🇨🇱 Peso chileno (CLP)</option>
+        <option value="VEF">🇻🇪 Bolívar venezolano (VEF)</option>
+        <option value="EUR">🇪🇺 Euro (EUR)</option>
+        <option value="ARS">🇦🇷 Peso argentino (ARS)</option>
+      </select>
+      <input type="number" id="amount" placeholder="Cantidad">
+    </div>
+    <div class="input-group">
+      <label for="toCurrency">A:</label>
+      <select id="toCurrency">
+        <option value="USD">🇺🇸 Dólar estadounidense (USD)</option>
+        <option value="CLP">🇨🇱 Peso chileno (CLP)</option>
+        <option value="VEF">🇻🇪 Bolívar venezolano (VEF)</option>
+        <option value="EUR">🇪🇺 Euro(EUR)</option>
+        <option value="ARS">🇦🇷 Peso argentino (ARS)</option>
+      </select>
+      <input type="text" id="result" readonly>
+    </div>
+    <button onclick="convertCurrency()">Convertir</button>
+  </div>
+  <script src="./assets/script/script.js"></script>
+</body>
+</html>
